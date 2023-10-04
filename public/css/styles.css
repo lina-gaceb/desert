@@ -2,7 +2,7 @@
 {
     margin: 0;
     padding: 0;
-    font-size: 15px;
+    font-size: 20px;
 }
 /*------------------------------HEADER-----------------------*/
 
@@ -24,7 +24,8 @@ h1
     align-items: center;
     justify-content: center;
    /* border: solid blue; */
-   width: 100%;
+    width: 100%;
+    font-size: 30px;
 }
 .header-nav
 {
@@ -56,13 +57,100 @@ nav a
     text-decoration: none;
 }
 
+/*-----------------------BODY--------------------------*/
+body
+{
+    background-color: #736B65;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+main{
+    background-color: white;
+    display: flex;
+    
+}
+.img-entete
+{
+    width: 100%;
+}
+/*-----------------------------box----------------------------*/
+.container
+{
+    display: flex;
+    width: 100%;
+    /* border: solid blue; */
+}
+hr
+{
+    margin: 10%;
+    
+}
+h2
+{
+    margin: 0;
+}
+
+.box1-2
+{
+    /* border: solid yellow; */
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    width: 60%;
+    justify-content:space-around;
+
+    
+}
+/*---box1*/
+.box1
+{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 5%;
+}
+.box1 p, h2
+{
+    padding: 5%;
+    padding-left: 0;
+    text-align: center; 
+    /* border: solid red; */
+}
+/*----box2---*/
+.box2 
+{
+    width: 50%;
+    /* border: solid red; */
+}
+/*---box3---*/
+.box3
+{
+    width: 80%;
+    
+    /* border: solid red; */
+}
+
+/*--------------------------------------FOOTER--------------------------------*/
+footer
+{
+    background-color: white;
+    text-align: center;
+    padding: 3%;
+    border-top: 0.5px solid #000;
+}
+
+
+/*------------Général---------------*/
+.gras
+{
+    font-weight: bold;
+    color: #592A2E;
+}
 /*--------------responsive header------------------*/
 
 @media all and (max-width: 800px)
 {
-    nav{
-        
-    }
+
     nav ul
         {
             flex-direction: column;
@@ -74,8 +162,8 @@ nav a
     }
     h1{
         align-items: center;
+        
     }
-   
 }
 @media all and (max-width: 1000px)
 {
@@ -97,69 +185,6 @@ nav
 }
 /* @media all and (min-width: 1024px)
 {
-
-} */
-/*-----------------------BODY--------------------------*/
-body
-{
-    margin-left: 27%;
-    margin-right: 27%;
-    background-color: #736B65;
-}
-main{
-    background-color: white;
-    display: flex;
-}
-/*-----------------------------box----------------------------*/
-.container
-{
-    display: flex;
-    width: 100%;
-    /* border: solid blue; */
-}
-.img-entete
-{
-    width: 100%;
-}
-.box1-2
-{
-    /* border: solid yellow; */
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    width: 60%;
-    justify-content:space-around;
-
-    
-}
-/*---box1*/
-.box1
-{
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    border: solid red;
-    
-}
-.box1 p, h2
-{
-    padding: 5%;
-    padding-left: 0;
-    text-align: center; 
-    /* border: solid red; */
-}
-/*----box2---*/
-.box2 
-{
-    width: 50%;
-    /* border: solid red; */
-}
-/*---box3---*/
-.box3
-{
-    width: 80%;
-    /* border: solid red; */
-}
 /*-------------------responsive body------------------*/
 @media all and (max-width: 800px)
 
@@ -201,39 +226,3 @@ main{
     }
 
 }
-
-/*--------------------------------------FOOTER--------------------------------*/
-footer
-{
-    background-color: white;
-    text-align: center;
-    padding: 3%;
-    border-top: 0.5px solid #000;
-}
-
-
-/*------------Général---------------*/
-.gras
-{
-    font-weight: bold;
-    color: #592A2E;
-}
-/* Vos css pour une largeur supérieure ou égale à 768px (tablette)*/
-/* @media screen and (min-width: 768px) {
-    .parent {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid green;
-    }
-    .enfant {
-        font-weight:300;
-    }
-} */
-
-/* Vos css pour une largeur supérieure ou égale à 1024px (pc desktop)*/
-/* @media screen and (min-width: 1024px) {
-    .parent {
-        display: none;
-    }
-} */
